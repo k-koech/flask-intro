@@ -1,0 +1,96 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "BOOKSTORE",
+    "dateExported": "2024-01-11T08:23:01.655Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "38e1b532-3a30-4e05-9c95-35cf81be1051",
+            "name": "books",
+            "containerId": "",
+            "created": "2024-01-11T07:50:52.919Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "49a4fbb9-966d-4cad-b20d-b28d6eca1526",
+            "name": "authors",
+            "containerId": "",
+            "created": "2024-01-11T07:51:12.242Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "d28cba29-c755-459c-96ea-006f5b180790",
+            "colId": "9f6d294b-3a86-4bef-8eca-37c612e88f69",
+            "containerId": "",
+            "name": "home",
+            "url": "http://127.0.0.1:5000",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-11T06:50:24.811Z",
+            "modified": "2024-01-11T06:50:39.567Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "201edb5c-4089-46dc-89c1-c1cb76cb3bc0",
+            "colId": "9f6d294b-3a86-4bef-8eca-37c612e88f69",
+            "containerId": "49a4fbb9-966d-4cad-b20d-b28d6eca1526",
+            "name": "get authors",
+            "url": "http://127.0.0.1:5000/authors",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-11T07:51:44.635Z",
+            "modified": "2024-01-11T07:51:56.863Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4b368529-3a23-429d-8c67-e3d2620d0b32",
+            "colId": "9f6d294b-3a86-4bef-8eca-37c612e88f69",
+            "containerId": "49a4fbb9-966d-4cad-b20d-b28d6eca1526",
+            "name": "get author",
+            "url": "http://127.0.0.1:5000/authors/10",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-11T07:59:56.897Z",
+            "modified": "2024-01-11T08:00:40.441Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3af8b75a-f8bc-46ff-a48b-158ddc87768f",
+            "colId": "9f6d294b-3a86-4bef-8eca-37c612e88f69",
+            "containerId": "49a4fbb9-966d-4cad-b20d-b28d6eca1526",
+            "name": "Add Author",
+            "url": "http://127.0.0.1:5000/authors",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-11T08:01:37.349Z",
+            "modified": "2024-01-11T08:17:53.468Z",
+            "headers": [
+                {
+                    "name": "header",
+                    "value": "application/json",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Kelvin\",\n  \"yob\": \"1997\",\n  \"nationality\": \"Kenyan\"\n\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
